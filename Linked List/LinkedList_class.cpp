@@ -15,7 +15,7 @@ class LinkedList
 		{
 			start = NULL;
 		}
-		void addNode(int v)
+		void addNode(int v)			//adding node at the end of the list
 		{
 			Node *newNode = new struct Node;
 			newNode->next = NULL;
@@ -36,7 +36,7 @@ class LinkedList
 			}
 			cout<<"node added "<<newNode->val<<"\n";
 		}
-		void printList()
+		void printList()			//printing entire list from the start
 		{
 			Node *temp;
 			if(temp == NULL)
@@ -52,7 +52,7 @@ class LinkedList
 			}
 			cout<<"\n";
 		}
-		void deleteNode(int v)
+		void deleteNode(int v)			//deleting a node with the value v
 		{
 			Node *temp = NULL,*prev =NULL;
 			temp = start;
@@ -85,7 +85,7 @@ class LinkedList
 			cout<<"list after deletion :\n";
 			printList();
 		}
-		void insertNode(int v,int new_v)
+		void insertNode(int v,int new_v)			//inserting a new node with value new_v after the node value v
 		{
 			Node *temp = NULL,*next = NULL;
 			Node *newNode = new struct Node;
@@ -119,7 +119,7 @@ class LinkedList
 			cout<<"list after insertion :\n";
 			printList();
 		}
-		void reverse()
+		void reverse()			//reversing a list using three pointers
 		{
 			Node *curr = NULL,*prev = NULL, *next = NULL;
 			curr = start;
